@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>部落格 — 霸軒與小美</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .blog-hero-banner {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      object-position: center top;
+      border-bottom: 3px solid var(--black);
+      display: block;
+      filter: grayscale(20%);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="navbar__logo">霸軒與小美 BAXUAN &amp; MEI</span>
+    <ul class="navbar__links">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="blog.html" class="active">部落格</a></li>
+      <li><a href="video.html">影片</a></li>
+      <li><a href="business.html">商業</a></li>
+    </ul>
+  </nav>
+
+  <!-- 插畫 Banner -->
+  <img
+    src="https://megapx-assets.dcard.tw/images/5009c5c6-89ca-43de-ac86-a729d621a6b0/640.jpeg"
+    alt="霸軒與小美插畫"
+    class="blog-hero-banner"
+    onerror="this.style.display='none'"
+  />
+
+  <div class="page-header">
+    <div>
+      <p class="page-header__eyebrow">BLOG · 部落格</p>
+      <h1 class="page-header__title">生活日常 ·<br>心情分享</h1>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="pills-row">
+      <button class="pill active" data-filter="all">全部</button>
+      <button class="pill" data-filter="daily">日常</button>
+      <button class="pill" data-filter="unbox">開箱</button>
+      <button class="pill" data-filter="qa">Q&amp;A</button>
+      <button class="pill" data-filter="love">感情</button>
+      <button class="pill" data-filter="travel">旅遊</button>
+    </div>
+    <div class="blog-list">
+
+      <div class="blog-row" data-category="daily">
+        <div class="blog-row__thumb">
+          <img src="https://megapx-assets.dcard.tw/images/5009c5c6-89ca-43de-ac86-a729d621a6b0/640.jpeg"
+            alt="插畫" style="width:80px;height:80px;object-fit:cover;"
+            onerror="this.style.display='none'" />
+        </div>
+        <div class="blog-row__body">
+          <span class="blog-row__tag">日常</span>
+          <p class="blog-row__title">今天吃了超好吃的火鍋！霸軒又點了一堆吃不完的肉</p>
+          <p class="blog-row__excerpt">這次去了新開的麻辣鍋，結果霸軒一直說「再來一盤」...</p>
+        </div>
+        <span class="blog-row__date">6/10</span>
+      </div>
+
+      <div class="blog-row" data-category="unbox">
+        <div class="blog-row__thumb" style="background:var(--cream);display:flex;align-items:center;justify-content:center;font-size:28px;">📦</div>
+        <div class="blog-row__body">
+          <span class="blog-row__tag">開箱</span>
+          <p class="blog-row__title">從早吃到晚的保健食品！每日愛用推薦</p>
+          <p class="blog-row__excerpt">最近被廠商寄了一大箱，每種都試了一遍...</p>
+        </div>
+        <span class="blog-row__date">6/5</span>
+      </div>
+
+      <div class="blog-row" data-category="qa">
+        <div class="blog-row__thumb" style="background:var(--cream);display:flex;align-items:center;justify-content:center;font-size:28px;">💬</div>
+        <div class="blog-row__body">
+          <span class="blog-row__tag">Q&amp;A</span>
+          <p class="blog-row__title">粉絲提問大回答！WEEEEEE~</p>
+          <p class="blog-row__excerpt">大家問了好多奇怪的問題，小美差點笑死...</p>
+        </div>
+        <span class="blog-row__date">5/28</span>
+      </div>
+
+      <div class="blog-row" data-category="love">
+        <div class="blog-row__thumb" style="background:var(--cream);display:flex;align-items:center;justify-content:center;font-size:28px;">❤️</div>
+        <div class="blog-row__body">
+          <span class="blog-row__tag">感情</span>
+          <p class="blog-row__title">交往14周年！我們是怎麼走到今天的</p>
+          <p class="blog-row__excerpt">從學生時代一起走到現在，很多事情想說...</p>
+        </div>
+        <span class="blog-row__date">5/15</span>
+      </div>
+
+      <div class="blog-row" data-category="travel">
+        <div class="blog-row__thumb" style="background:var(--cream);display:flex;align-items:center;justify-content:center;font-size:28px;">✈️</div>
+        <div class="blog-row__body">
+          <span class="blog-row__tag">旅遊</span>
+          <p class="blog-row__title">日本東京三天兩夜！吃了什麼、玩了什麼全紀錄</p>
+          <p class="blog-row__excerpt">終於等到可以出國的機會了！霸軒超興奮...</p>
+        </div>
+        <span class="blog-row__date">4/22</span>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="footer__logo">霸軒與小美 · BAXUAN &amp; MEI</span>
+    <span class="footer__text">粉絲致敬站 · Fan Tribute Site · 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

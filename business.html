@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>商業合作 — 霸軒與小美</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .biz-banner {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      border-bottom: 3px solid var(--black);
+      background: var(--cream);
+      overflow: hidden;
+      min-height: 130px;
+    }
+    .biz-banner__text {
+      padding: 28px 32px;
+      border-right: 3px solid var(--black);
+    }
+    .biz-banner__text p { font-size: 13px; color: var(--gray); margin-top: 8px; max-width: 420px; }
+    .biz-banner__img {
+      overflow: hidden;
+      background: var(--black);
+    }
+    .biz-banner__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      filter: grayscale(20%);
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="navbar__logo">霸軒與小美 BAXUAN &amp; MEI</span>
+    <ul class="navbar__links">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="blog.html">部落格</a></li>
+      <li><a href="video.html">影片</a></li>
+      <li><a href="business.html" class="active">商業</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner with image -->
+  <div class="biz-banner">
+    <div class="biz-banner__text">
+      <p style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gray);margin-bottom:6px;">BUSINESS · 商業</p>
+      <h1 style="font-size:28px;font-weight:700;line-height:1.2;">工商合作 ·<br>媒體資料</h1>
+      <p>台灣知名情侶 YouTuber，跨平台總受眾逾 230 萬，歡迎各類品牌洽談合作。</p>
+    </div>
+    <div class="biz-banner__img">
+      <img src="https://megapx-assets.dcard.tw/images/5009c5c6-89ca-43de-ac86-a729d621a6b0/640.jpeg"
+        alt="霸軒與小美" onerror="this.style.display='none'" />
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <section class="section">
+    <p class="section__eyebrow">頻道數據</p>
+    <h2 class="section__title">受眾規模</h2>
+    <div class="stats-row">
+      <div class="stat-box">
+        <p class="stat-box__num">150萬+</p>
+        <p class="stat-box__label">YouTube 訂閱</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-box__num">50萬+</p>
+        <p class="stat-box__label">Facebook 粉絲</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-box__num">30萬+</p>
+        <p class="stat-box__label">Instagram 追蹤</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Biz cards -->
+  <section class="section">
+    <p class="section__eyebrow">合作方案</p>
+    <h2 class="section__title">我們提供什麼</h2>
+    <div class="biz-cards">
+      <div class="biz-card">
+        <div class="biz-card__icon"><i class="ti ti-player-play"></i></div>
+        <p class="biz-card__name">置入影片</p>
+        <p class="biz-card__desc">YouTube 主頻道影片置入，自然融入劇情，不突兀不硬塞</p>
+      </div>
+      <div class="biz-card">
+        <div class="biz-card__icon"><i class="ti ti-brand-instagram"></i></div>
+        <p class="biz-card__name">社群貼文</p>
+        <p class="biz-card__desc">Instagram · Facebook 業配貼文，觸及多平台受眾</p>
+      </div>
+      <div class="biz-card">
+        <div class="biz-card__icon"><i class="ti ti-microphone"></i></div>
+        <p class="biz-card__name">廣播電台</p>
+        <p class="biz-card__desc">Podcast 節目置入，適合品牌長期曝光與信任感建立</p>
+      </div>
+      <div class="biz-card">
+        <div class="biz-card__icon"><i class="ti ti-speakerphone"></i></div>
+        <p class="biz-card__name">直播合作</p>
+        <p class="biz-card__desc">不定期直播即時互動，配合品牌活動或新品發表</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section">
+    <p class="section__eyebrow">聯絡我們</p>
+    <div class="contact-box">
+      <p class="contact-box__title">工商合作請洽</p>
+      <div class="contact-row"><i class="ti ti-mail"></i> 507m4xu4@gmail.com</div>
+      <div class="contact-row"><i class="ti ti-phone"></i> 0986-383-719</div>
+      <div class="contact-row"><i class="ti ti-brand-line"></i> LINE ID：baxuan666</div>
+      <div class="contact-row"><i class="ti ti-user"></i> 聯絡人：Evonne</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="footer__logo">霸軒與小美 · BAXUAN &amp; MEI</span>
+    <span class="footer__text">粉絲致敬站 · Fan Tribute Site · 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

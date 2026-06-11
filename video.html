@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>影片 — 霸軒與小美</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .video-banner {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      border-bottom: 3px solid var(--black);
+      background: var(--black);
+      overflow: hidden;
+      height: 140px;
+    }
+    .video-banner img {
+      width: 50%;
+      height: 140px;
+      object-fit: cover;
+      object-position: top;
+      opacity: 0.85;
+      filter: grayscale(30%);
+    }
+    .video-banner img + img {
+      border-left: 3px solid var(--black);
+    }
+    .video-banner__text {
+      width: 100%;
+      padding: 0 24px;
+      color: var(--cream);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-align: center;
+    }
+    .video-card__thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(20%);
+      display: block;
+    }
+    .video-card__thumb {
+      position: relative;
+      height: 110px;
+      overflow: hidden;
+    }
+    .video-card__thumb .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(26,26,24,0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="navbar__logo">霸軒與小美 BAXUAN &amp; MEI</span>
+    <ul class="navbar__links">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="blog.html">部落格</a></li>
+      <li><a href="video.html" class="active">影片</a></li>
+      <li><a href="business.html">商業</a></li>
+    </ul>
+  </nav>
+
+  <!-- 雙圖 Banner -->
+  <div class="video-banner">
+    <img src="https://megapx-assets.dcard.tw/images/5009c5c6-89ca-43de-ac86-a729d621a6b0/640.jpeg"
+      alt="霸軒與小美插畫"
+      onerror="this.style.display='none'" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_37Oyu0qIaLDQTqzjAOh_hiUGmfR-AhDwhQ&s"
+      alt="霸軒與小美"
+      onerror="this.style.display='none'" />
+  </div>
+
+  <div class="page-header">
+    <div>
+      <p class="page-header__eyebrow">VIDEO · 影片</p>
+      <h1 class="page-header__title">精華影片 ·<br>直播回顧</h1>
+    </div>
+  </div>
+
+  <section class="section">
+    <p class="section__eyebrow">精選系列</p>
+    <div class="pills-row">
+      <button class="pill active" data-filter="all">全部</button>
+      <button class="pill" data-filter="daily">生活日常</button>
+      <button class="pill" data-filter="ghost">鬼怪故事</button>
+      <button class="pill" data-filter="live">直播精華</button>
+      <button class="pill" data-filter="turtle">海龜湯</button>
+    </div>
+    <div class="video-grid">
+
+      <div class="video-card" data-category="daily">
+        <div class="video-card__thumb">
+          <img src="https://megapx-assets.dcard.tw/images/5009c5c6-89ca-43de-ac86-a729d621a6b0/640.jpeg"
+            alt="影片縮圖" onerror="this.src=''" />
+          <div class="overlay">
+            <div class="video-card__play">▶</div>
+          </div>
+          <span class="video-card__label">日常</span>
+          <span class="video-card__dur">12:34</span>
+        </div>
+        <div class="video-card__body">
+          <p class="video-card__title">吃什麼醬料都加爆的男人｜超級醬料人</p>
+          <p class="video-card__meta">42萬 次觀看 · 3個月前</p>
+        </div>
+      </div>
+
+      <div class="video-card" data-category="ghost">
+        <div class="video-card__thumb">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_37Oyu0qIaLDQTqzjAOh_hiUGmfR-AhDwhQ&s"
+            alt="影片縮圖" onerror="this.src=''" />
+          <div class="overlay">
+            <div class="video-card__play">▶</div>
+          </div>
+          <span class="video-card__label">鬼故事</span>
+          <span class="video-card__dur">28:10</span>
+        </div>
+        <div class="video-card__body">
+          <p class="video-card__title">小美說了一個讓霸軒睡不著的鬼故事</p>
+          <p class="video-card__meta">58萬 次觀看 · 5個月前</p>
+        </div>
+      </div>
+
+      <div class="video-card" data-category="turtle">
+        <div class="video-card__thumb" style="background:var(--black);">
+          <div class="overlay" style="background:rgba(26,26,24,0.85);">
+            <div class="video-card__play">▶</div>
+          </div>
+          <span class="video-card__label">海龜湯</span>
+          <span class="video-card__dur">45:22</span>
+        </div>
+        <div class="video-card__body">
+          <p class="video-card__title">小美玩海龜湯系列｜這題也太難了吧</p>
+          <p class="video-card__meta">31萬 次觀看 · 6個月前</p>
+        </div>
+      </div>
+
+      <div class="video-card" data-category="live">
+        <div class="video-card__thumb" style="background:var(--black);">
+          <div class="overlay" style="background:rgba(26,26,24,0.85);">
+            <div class="video-card__play">▶</div>
+          </div>
+          <span class="video-card__label">直播精華</span>
+          <span class="video-card__dur">1:02:45</span>
+        </div>
+        <div class="video-card__body">
+          <p class="video-card__title">直播精華｜霸軒廣播電台最爆笑片段</p>
+          <p class="video-card__meta">27萬 次觀看 · 7個月前</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="section__eyebrow">訂閱頻道</p>
+    <div class="social-row">
+      <a href="https://www.youtube.com/@霸軒與小美BaxuanMei" target="_blank" rel="noopener" class="social-btn">
+        <i class="ti ti-brand-youtube"></i> 前往 YouTube 頻道
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="footer__logo">霸軒與小美 · BAXUAN &amp; MEI</span>
+    <span class="footer__text">粉絲致敬站 · Fan Tribute Site · 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
